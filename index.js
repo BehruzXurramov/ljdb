@@ -18,7 +18,7 @@ class LJDB {
       fs.writeFileSync(this.dbPath, "{}", "utf8");
     }
 
-    this.db = this.read();
+    this.data = this.read();
   }
 
   read() {
@@ -27,7 +27,7 @@ class LJDB {
   }
 
   save() {
-    fs.writeFileSync(this.dbPath, JSON.stringify(this.db, null, 2), "utf8");
+    fs.writeFileSync(this.dbPath, JSON.stringify(this.data, null, 2), "utf8");
   }
 
   static deleteDB(dbName) {

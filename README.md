@@ -20,7 +20,7 @@ const db = new LJDB("mydatabase");
 console.log(db.read());
 
 // Modify data in RAM
-db.db.users = [{ name: "Ali", age: 25 }];
+db.data.users = [{ name: "Ali", age: 25 }];
 
 // Save changes to file
 db.save();
