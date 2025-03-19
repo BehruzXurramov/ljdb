@@ -1,0 +1,27 @@
+{
+  "name": "ljdb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "json",
+    "database",
+    "local",
+    "lightweight",
+    "simple",
+    "nosql",
+    "storage",
+    "nodejs",
+    "fast",
+    "ljdb"
+  ],
+  "author": "Behruz Xurramov",
+  "license": "ISC",
+  "description": "A simple local JSON-based database that loads data into RAM for fast access."
+}
