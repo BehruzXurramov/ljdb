@@ -3,6 +3,10 @@ const path = require("path");
 
 class LJDB {
   constructor(dbName) {
+    if (!dbName) {
+      throw new Error("dbName can't be empty")
+    }
+
     this.dbDir = path.join(process.cwd(), "ljdb");
     this.dbPath = path.join(this.dbDir, `${dbName}.json`);
 

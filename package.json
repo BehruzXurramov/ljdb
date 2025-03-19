@@ -7,7 +7,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/BehruzXurramov/ljdb.git"
   },
   "keywords": [
     "json",
@@ -22,6 +22,6 @@
     "ljdb"
   ],
   "author": "Behruz Xurramov",
-  "license": "ISC",
+  "license": "MIT",
   "description": "A simple local JSON-based database that loads data into RAM for fast access."
 }

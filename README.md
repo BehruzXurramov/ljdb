@@ -16,13 +16,13 @@ const LJDB = require("ljdb");
 // Create or open a database
 const db = new LJDB("mydatabase");
 
-// Read data from RAM
+// Read data from file
 console.log(db.read());
 
 // Modify data in RAM
 db.db.users = [{ name: "Ali", age: 25 }];
 
-// Save changes to disk
+// Save changes to file
 db.save();
 
 // Delete the database file
