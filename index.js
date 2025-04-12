@@ -22,11 +22,11 @@ class LJDB {
   }
 
   read() {
-    const data = fs.readFileSync(this.dbPath, "utf8");
+    let data = fs.readFileSync(this.dbPath, "utf8");
 
     if (!data) {
       data = "{}";
-      this.data = data;
+      this.data = {};
       this.save();
     }
 
