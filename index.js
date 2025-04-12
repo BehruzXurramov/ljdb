@@ -4,7 +4,7 @@ const path = require("path");
 class LJDB {
   constructor(dbName) {
     if (!dbName) {
-      throw new Error("dbName can't be empty")
+      throw new Error("dbName can't be empty");
     }
 
     this.dbDir = path.join(process.cwd(), "ljdb");
@@ -23,6 +23,13 @@ class LJDB {
 
   read() {
     const data = fs.readFileSync(this.dbPath, "utf8");
+
+    if (!data) {
+      data = "{}";
+      this.data = data;
+      this.save();
+    }
+
     return JSON.parse(data);
   }
 
